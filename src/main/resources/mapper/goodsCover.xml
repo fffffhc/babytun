@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itfhc.babytun.dao.goodsCoverDao">
+    <select id="findCoverById" parameterType="Long" resultType="com.itfhc.babytun.entity.goodsCover">
+        select * from t_goods_cover where goods_id = #{Id} order by gc_order
+    </select>
+
+</mapper>
